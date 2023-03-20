@@ -1,0 +1,78 @@
+{
+  "name": "currency.info",
+  "version": "0.1.0",
+  "description": "currency.info is a collection of information about actively used currencies around the world",
+  "engines": {
+    "yarn": ">= 1.22.4",
+    "node": ">= 14.17.0"
+  },
+  "files": [
+    "build",
+    "typings"
+  ],
+  "main": "./build/require/index.js",
+  "module": "./build/import/index.js",
+  "browser": "./build/browser/index.js",
+  "exports": {
+    ".": {
+      "import": "./build/import/index.js",
+      "require": "./build/require/index.js"
+    },
+    "./*": {
+      "import": "./build/import/*.js",
+      "require": "./build/require/*.js"
+    }
+  },
+  "types": "./typings/index.d.ts",
+  "scripts": {
+    "clean": "npm-run-all --parallel clean:**",
+    "clean:build": "rimraf ./build",
+    "clean:types": "rimraf ./typings",
+    "clean:gen": "rimraf ./gen",
+    "generate": "node ./bin/generate.js",
+    "build": "npm-run-all run:rollup run:types",
+    "build:types": "tsc --project 'tsconfig.types.json' --sourceMap --declaration --emitDeclarationOnly --declarationDir './typings' --declarationMap",
+    "copy:typescript": "cp -R ./gen/ts ./build/ts",
+    "run:rollup": "rollup -c",
+    "run:types": "npm-run-all copy:typescript build:types",
+    "make": "npm-run-all clean generate build",
+    "prepare": "yarn make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/westrem/currency.info.git"
+  },
+  "keywords": [
+    "currency",
+    "currencies",
+    "money",
+    "monetary",
+    "financial",
+    "ISO 4217",
+    "minor units",
+    "major units",
+    "subunits",
+    "format",
+    "formatting",
+    "NumberFormat",
+    "Intl.NumberFormat"
+  ],
+  "author": "Jan Jadud <dev@gojadud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/westrem/currency.info/issues"
+  },
+  "homepage": "https://github.com/westrem/currency.info#readme",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.0.0",
+    "glob": "^9.3.0",
+    "handlebars": "^4.7.7",
+    "json5": "^2.2.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.4",
+    "rimraf": "^4.4.0",
+    "rollup": "^3.19.1",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2"
+  }
+}

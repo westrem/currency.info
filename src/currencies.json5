@@ -1,0 +1,1578 @@
+// Base taken from https://github.com/vimeo/py-money/blob/master/money/currency.py
+// 'symbolPosition' & 'symbolSpaced' taken from https://fastspring.com/blog/how-to-format-30-currencies-from-countries-all-over-the-world/#:~:text=Symbol%20Placement,right%20of%20the%20dollar%20amount.
+// 'symbol' taken from https://en.wikipedia.org/wiki/List_of_circulating_currencies
+{
+  "AED": {
+    "displayName": "UAE Dirham",
+    "numericCode": 784,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "AED",
+    "symbol": "د.إ"
+  },
+  "AFN": {
+    "displayName": "Afghan Afghani",
+    "numericCode": 971,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "AFN",
+    "symbol": "؋"
+  },
+  "ALL": {
+    "displayName": "Albania Lek",
+    "numericCode": 8,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "ALL",
+    "symbol": "L"
+  },
+  "AMD": {
+    "displayName": "Armenian Dram",
+    "numericCode": 51,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "AMD",
+    "symbol": "֏"
+  },
+  "ANG": {
+    "displayName": "Netherlands Antillean Guilder",
+    "numericCode": 532,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "ANG",
+    "symbol": "ƒ"
+  },
+  "AOA": {
+    "displayName": "Angolan Kwanza",
+    "numericCode": 973,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "AOA",
+    "symbol": "Kz"
+  },
+  "ARS": {
+    "displayName": "Argentine Peso",
+    "numericCode": 32,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "ARS",
+    "symbol": "$"
+  },
+  "AUD": {
+    "displayName": "Australian Dollar",
+    "numericCode": 36,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "AUD",
+    "symbol": "$"
+  },
+  "AWG": {
+    "displayName": "Aruban Florin",
+    "numericCode": 533,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "AWG",
+    "symbol": "ƒ"
+  },
+  "AZN": {
+    "displayName": "Azerbaijanian Manat",
+    "numericCode": 944,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "AZN",
+    "symbol": "₼"
+  },
+  "BAM": {
+    "displayName": "Bosnia-Herzegovina Convertible Mark",
+    "numericCode": 977,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BAM",
+    "symbol": "KM"
+  },
+  "BBD": {
+    "displayName": "Barbados Dollar",
+    "numericCode": 52,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BBD",
+    "symbol": "$"
+  },
+  "BDT": {
+    "displayName": "Bangladeshi Taka",
+    "numericCode": 50,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BDT",
+    "symbol": "৳"
+  },
+  "BGN": {
+    "displayName": "Bulgarian Lev",
+    "numericCode": 975,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BGN",
+    "symbol": "лв."
+  },
+  "BHD": {
+    "displayName": "Bahraini Dinar",
+    "numericCode": 48,
+    "defaultFractionDigits": 3,
+    "subUnit": 1000,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BHD",
+    "symbol": ".د.ب"
+  },
+  "BIF": {
+    "displayName": "Burundi Franc",
+    "numericCode": 108,
+    "defaultFractionDigits": 0,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BIF",
+    "symbol": "Fr"
+  },
+  "BMD": {
+    "displayName": "Bermudian Dollar",
+    "numericCode": 60,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BMD",
+    "symbol": "$"
+  },
+  "BND": {
+    "displayName": "Brunei Dollar",
+    "numericCode": 96,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BND",
+    "symbol": "$"
+  },
+  "BOB": {
+    "displayName": "Bolivian Boliviano",
+    "numericCode": 68,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BOB",
+    "symbol": "Bs."
+  },
+  // No longer in circulation (https://financial-dictionary.thefreedictionary.com/BOV)
+  //  "BOV": {
+  //    "displayName": "Bolivian Mvdol",
+  //    "numericCode": 984,
+  //    "defaultFractionDigits": 2,
+  //    "subUnit": 100,
+  //    "symbolSpaced": true,
+  //    "symbolPosition": "after",
+  //    "isoCode": "BOV",
+  //    "symbol": "Bs."
+  //  },
+  "BRL": {
+    "displayName": "Brazilian Real",
+    "numericCode": 986,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "BRL",
+    "symbol": "R$"
+  },
+  "BSD": {
+    "displayName": "Bahamian Dollar",
+    "numericCode": 44,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BSD",
+    "symbol": "$"
+  },
+  "BTN": {
+    "displayName": "Bhutanese Ngultrum",
+    "numericCode": 64,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BTN",
+    "symbol": "Nu."
+  },
+  "BWP": {
+    "displayName": "Botswanan Pula",
+    "numericCode": 72,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BWP",
+    "symbol": "P"
+  },
+  "BYN": {
+    "displayName": "Belarusian Ruble",
+    "numericCode": 933,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BYN",
+    "symbol": "Br"
+  },
+  "BZD": {
+    "displayName": "Belize Dollar",
+    "numericCode": 84,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "BZD",
+    "symbol": "$"
+  },
+  "CAD": {
+    "displayName": "Canadian Dollar",
+    "numericCode": 124,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "CAD",
+    "symbol": "$"
+  },
+  "CDF": {
+    "displayName": "Congolese Franc",
+    "numericCode": 976,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "CDF",
+    "symbol": "Fr"
+  },
+  "CHF": {
+    "displayName": "Swiss Franc",
+    "numericCode": 756,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "CHF",
+    "symbol": "Fr."
+  },
+  "CLP": {
+    "displayName": "Chilean Peso",
+    "numericCode": 152,
+    "defaultFractionDigits": 0,
+    "subUnit": 1,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "CLP",
+    "symbol": "$"
+  },
+  "CNY": {
+    "displayName": "Chinese Yuan",
+    "numericCode": 156,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "CNY",
+    "symbol": "¥"
+  },
+  "COP": {
+    "displayName": "Colombian Peso",
+    "numericCode": 170,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "COP",
+    "symbol": "$"
+  },
+  "CRC": {
+    "displayName": "Costa Rican Colon",
+    "numericCode": 188,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "CRC",
+    "symbol": "₡"
+  },
+  "CUC": {
+    "displayName": "Peso Convertible",
+    "numericCode": 931,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "CUC",
+    "symbol": "$"
+  },
+  "CUP": {
+    "displayName": "Cuban Peso",
+    "numericCode": 192,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "CUP",
+    "symbol": "$"
+  },
+  "CVE": {
+    "displayName": "Cape Verde Escudo",
+    "numericCode": 132,
+    "defaultFractionDigits": 0,
+    "subUnit": 1,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "CVE",
+    "symbol": "$"
+  },
+  "CZK": {
+    "displayName": "Czech Koruna",
+    "numericCode": 203,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "CZK",
+    "symbol": "Kč"
+  },
+  "DJF": {
+    "displayName": "Djibouti Franc",
+    "numericCode": 262,
+    "defaultFractionDigits": 0,
+    "subUnit": 1,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "DJF",
+    "symbol": "Fr"
+  },
+  "DKK": {
+    "displayName": "Danish Krone",
+    "numericCode": 208,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "DKK",
+    "symbol": "kr."
+  },
+  "DOP": {
+    "displayName": "Dominican Peso",
+    "numericCode": 214,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "DOP",
+    "symbol": "$"
+  },
+  "DZD": {
+    "displayName": "Algerian Dinar",
+    "numericCode": 12,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "DZD",
+    "symbol": "د.ج"
+  },
+  "EGP": {
+    "displayName": "Egyptian Pound",
+    "numericCode": 818,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "EGP",
+    "symbol": "£"
+  },
+  "ERN": {
+    "displayName": "Eritrean Nakfa",
+    "numericCode": 232,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "ERN",
+    "symbol": "Nfk"
+  },
+  "ETB": {
+    "displayName": "Ethiopian Birr",
+    "numericCode": 230,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "ETB",
+    "symbol": "Br"
+  },
+  "EUR": {
+    "displayName": "Euro",
+    "numericCode": 978,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "EUR",
+    "symbol": "€"
+  },
+  "FJD": {
+    "displayName": "Fiji Dollar",
+    "numericCode": 242,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "FJD",
+    "symbol": "$"
+  },
+  "FKP": {
+    "displayName": "Falkland Islands Pound",
+    "numericCode": 238,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "FKP",
+    "symbol": "£"
+  },
+  "GBP": {
+    "displayName": "Pound Sterling",
+    "numericCode": 826,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": false,
+    "symbolPosition": "before",
+    "isoCode": "GBP",
+    "symbol": "£"
+  },
+  "GEL": {
+    "displayName": "Georgian Lari",
+    "numericCode": 981,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "GEL",
+    "symbol": "₾"
+  },
+  "GHS": {
+    "displayName": "Ghana Cedi",
+    "numericCode": 936,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "GHS",
+    "symbol": "₵"
+  },
+  "GIP": {
+    "displayName": "Gibraltar Pound",
+    "numericCode": 292,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "GIP",
+    "symbol": "£"
+  },
+  "GMD": {
+    "displayName": "Gambian Dalasi",
+    "numericCode": 270,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "GMD",
+    "symbol": "D"
+  },
+  "GNF": {
+    "displayName": "Guinea Franc",
+    "numericCode": 324,
+    "defaultFractionDigits": 0,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "GNF",
+    "symbol": "Fr"
+  },
+  "GTQ": {
+    "displayName": "Guatemalan Quetzal",
+    "numericCode": 320,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "GTQ",
+    "symbol": "Q"
+  },
+  "GYD": {
+    "displayName": "Guyana Dollar",
+    "numericCode": 328,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "GYD",
+    "symbol": "$"
+  },
+  "HKD": {
+    "displayName": "Hong Kong Dollar",
+    "numericCode": 344,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "HKD",
+    "symbol": "$"
+  },
+  "HNL": {
+    "displayName": "Honduran Lempira",
+    "numericCode": 340,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "HNL",
+    "symbol": "L"
+  },
+  "HRK": {
+    "displayName": "Croatian Kuna",
+    "numericCode": 191,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "HRK",
+    "symbol": "kn"
+  },
+  "HTG": {
+    "displayName": "Haitian Gourde",
+    "numericCode": 332,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "HTG",
+    "symbol": "G"
+  },
+  "HUF": {
+    "displayName": "Hungarian Forint",
+    "numericCode": 348,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "HUF",
+    "symbol": "Ft"
+  },
+  "IDR": {
+    "displayName": "Indonesian Rupiah",
+    "numericCode": 360,
+    "defaultFractionDigits": 0,
+    "subUnit": 1,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "IDR",
+    "symbol": "Rp"
+  },
+  "ILS": {
+    "displayName": "New Israeli Sheqel",
+    "numericCode": 376,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "ILS",
+    "symbol": "₪"
+  },
+  "INR": {
+    "displayName": "Indian Rupee",
+    "numericCode": 356,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "INR",
+    "symbol": "₹"
+  },
+  "IQD": {
+    "displayName": "Iraqi Dinar",
+    "numericCode": 368,
+    "defaultFractionDigits": 3,
+    "subUnit": 1000,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "IQD",
+    "symbol": "ع.د"
+  },
+  "IRR": {
+    "displayName": "Iranian Rial",
+    "numericCode": 364,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "IRR",
+    "symbol": "﷼"
+  },
+  "ISK": {
+    "displayName": "Iceland Krona",
+    "numericCode": 352,
+    "defaultFractionDigits": 0,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "ISK",
+    "symbol": "kr"
+  },
+  "JMD": {
+    "displayName": "Jamaican Dollar",
+    "numericCode": 388,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "JMD",
+    "symbol": "$"
+  },
+  "JOD": {
+    "displayName": "Jordanian Dinar",
+    "numericCode": 400,
+    "defaultFractionDigits": 3,
+    "subUnit": 1000,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "JOD",
+    "symbol": "د.ا"
+  },
+  "JPY": {
+    "displayName": "Japanese Yen",
+    "numericCode": 392,
+    "defaultFractionDigits": 0,
+    "subUnit": 1,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "JPY",
+    "symbol": "¥"
+  },
+  "KES": {
+    "displayName": "Kenyan Shilling",
+    "numericCode": 404,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "KES",
+    "symbol": "Sh"
+  },
+  "KGS": {
+    "displayName": "Kyrgystani Som",
+    "numericCode": 417,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "KGS",
+    "symbol": "с"
+  },
+  "KHR": {
+    "displayName": "Cambodian Riel",
+    "numericCode": 116,
+    "defaultFractionDigits": 0,
+    "subUnit": 1,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "KHR",
+    "symbol": "៛"
+  },
+  "KMF": {
+    "displayName": "Comoro Franc",
+    "numericCode": 174,
+    "defaultFractionDigits": 0,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "KMF",
+    "symbol": "Fr"
+  },
+  "KPW": {
+    "displayName": "North Korean Won",
+    "numericCode": 408,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "KPW",
+    "symbol": "₩"
+  },
+  "KRW": {
+    "displayName": "South Korean Won",
+    "numericCode": 410,
+    "defaultFractionDigits": 0,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "KRW",
+    "symbol": "₩"
+  },
+  "KWD": {
+    "displayName": "Kuwaiti Dinar",
+    "numericCode": 414,
+    "defaultFractionDigits": 3,
+    "subUnit": 1000,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "KWD",
+    "symbol": "د.ك"
+  },
+  "KYD": {
+    "displayName": "Cayman Islands Dollar",
+    "numericCode": 136,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "KYD",
+    "symbol": "$"
+  },
+  "KZT": {
+    "displayName": "Kazakhstani Tenge",
+    "numericCode": 398,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "KZT",
+    "symbol": "₸"
+  },
+  "LAK": {
+    "displayName": "Laotian Kip",
+    "numericCode": 418,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": false,
+    "symbolPosition": "before",
+    "isoCode": "LAK",
+    "symbol": "₭"
+  },
+  "LBP": {
+    "displayName": "Lebanese Pound",
+    "numericCode": 422,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "LBP",
+    "symbol": "LL"
+  },
+  "LKR": {
+    "displayName": "Sri Lanka Rupee",
+    "numericCode": 144,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "LKR",
+    "symbol": "Rs"
+  },
+  "LRD": {
+    "displayName": "Liberian Dollar",
+    "numericCode": 430,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": false,
+    "symbolPosition": "before",
+    "isoCode": "LRD",
+    "symbol": "L$"
+  },
+  "LSL": {
+    "displayName": "Lesotho Loti",
+    "numericCode": 426,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "LSL",
+    "symbol": "L"
+  },
+  // Replaced by the EUR in 2015 (https://en.wikipedia.org/wiki/Lithuania_and_the_euro)
+  //  "LTL": {
+  //    "displayName": "Lithuanian Litas",
+  //    "numericCode": 440,
+  //    "defaultFractionDigits": 2,
+  //    "subUnit": 100,
+  //    "symbolSpaced": true,
+  //    "symbolPosition": "after",
+  //    "isoCode": "LTL",
+  //    "symbol": "Lt"
+  //  },
+  // Replaced by the EUR in 2014 (https://en.wikipedia.org/wiki/Latvian_euro_coins)
+  //  "LVL": {
+  //    "displayName": "Latvian Lats",
+  //    "numericCode": 428,
+  //    "defaultFractionDigits": 2,
+  //    "subUnit": 100,
+  //    "symbolSpaced": true,
+  //    "symbolPosition": "after",
+  //    "isoCode": "LVL",
+  //    "symbol": "Ls"
+  //  },
+  "LYD": {
+    "displayName": "Libyan Dinar",
+    "numericCode": 434,
+    "defaultFractionDigits": 3,
+    "subUnit": 1000,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "LYD",
+    "symbol": "ل.د"
+  },
+  "MAD": {
+    "displayName": "Moroccan Dirham",
+    "numericCode": 504,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": false,
+    "symbolPosition": "before",
+    "isoCode": "MAD",
+    "symbol": "Dh"
+  },
+  "MDL": {
+    "displayName": "Moldovan Leu",
+    "numericCode": 498,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "MDL",
+    "symbol": "L"
+  },
+  "MGA": {
+    "displayName": "Malagasy Ariary",
+    "numericCode": 969,
+    "defaultFractionDigits": 2,
+    "subUnit": 5,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "MGA",
+    "symbol": "Ar"
+  },
+  "MKD": {
+    "displayName": "Macedonian Denar",
+    "numericCode": 807,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "MKD",
+    "symbol": "ден"
+  },
+  "MMK": {
+    "displayName": "Myanmar Kyat",
+    "numericCode": 104,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "MMK",
+    "symbol": "Ks"
+  },
+  "MNT": {
+    "displayName": "Mongolian Tugrik",
+    "numericCode": 496,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "MNT",
+    "symbol": "₮"
+  },
+  "MOP": {
+    "displayName": "Macanese Pataca",
+    "numericCode": 446,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "MOP",
+    "symbol": "P"
+  },
+  "MRO": {
+    "displayName": "Mauritanian Ouguiya",
+    "numericCode": 478,
+    "defaultFractionDigits": 2,
+    "subUnit": 5,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "MRO",
+    "symbol": "UM"
+  },
+  "MUR": {
+    "displayName": "Mauritius Rupee",
+    "numericCode": 480,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "MUR",
+    "symbol": "₨"
+  },
+  "MVR": {
+    "displayName": "Maldivian Rufiyaa",
+    "numericCode": 462,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "MVR",
+    "symbol": ".ރ"
+  },
+  "MWK": {
+    "displayName": "Malawian Kwacha",
+    "numericCode": 454,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "MWK",
+    "symbol": "MK"
+  },
+  "MXN": {
+    "displayName": "Mexican Peso",
+    "numericCode": 484,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "MXN",
+    "symbol": "$"
+  },
+  "MYR": {
+    "displayName": "Malaysian Ringgit",
+    "numericCode": 458,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "MYR",
+    "symbol": "RM"
+  },
+  "MZN": {
+    "displayName": "Mozambique Metical",
+    "numericCode": 943,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "MZN",
+    "symbol": "MT"
+  },
+  "NAD": {
+    "displayName": "Namibia Dollar",
+    "numericCode": 516,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "NAD",
+    "symbol": "$"
+  },
+  "NGN": {
+    "displayName": "Nigerian Naira",
+    "numericCode": 566,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "NGN",
+    "symbol": "₦"
+  },
+  "NIO": {
+    "displayName": "Cordoba Oro",
+    "numericCode": 558,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "NIO",
+    "symbol": "C$"
+  },
+  "NOK": {
+    "displayName": "Norwegian Krone",
+    "numericCode": 578,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "NOK",
+    "symbol": "kr"
+  },
+  "NPR": {
+    "displayName": "Nepalese Rupee",
+    "numericCode": 524,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "NPR",
+    "symbol": "रू"
+  },
+  "NZD": {
+    "displayName": "New Zealand Dollar",
+    "numericCode": 554,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "NZD",
+    "symbol": "$"
+  },
+  "OMR": {
+    "displayName": "Rial Omani",
+    "numericCode": 512,
+    "defaultFractionDigits": 3,
+    "subUnit": 1000,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "OMR",
+    "symbol": "ر.ع."
+  },
+  "PAB": {
+    "displayName": "Panamanian Balboa",
+    "numericCode": 590,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "PAB",
+    "symbol": "B/."
+  },
+  "PEN": {
+    "displayName": "Peruvian Nuevo Sol",
+    "numericCode": 604,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "PEN",
+    "symbol": "S/."
+  },
+  "PGK": {
+    "displayName": "Papua New Guinean Kina",
+    "numericCode": 598,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "PGK",
+    "symbol": "K"
+  },
+  "PHP": {
+    "displayName": "Philippine Peso",
+    "numericCode": 608,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "PHP",
+    "symbol": "₱"
+  },
+  "PKR": {
+    "displayName": "Pakistan Rupee",
+    "numericCode": 586,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "PKR",
+    "symbol": "₨"
+  },
+  "PLN": {
+    "displayName": "Polish Zloty",
+    "numericCode": 985,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "PLN",
+    "symbol": "zł"
+  },
+  "PYG": {
+    "displayName": "Paraguayan Guarani",
+    "numericCode": 600,
+    "defaultFractionDigits": 0,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "PYG",
+    "symbol": "₲"
+  },
+  "QAR": {
+    "displayName": "Qatari Rial",
+    "numericCode": 634,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "QAR",
+    "symbol": "ر.ق"
+  },
+  "RON": {
+    "displayName": "New Romanian Leu",
+    "numericCode": 946,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "RON",
+    "symbol": "lei"
+  },
+  "RSD": {
+    "displayName": "Serbian Dinar",
+    "numericCode": 941,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "RSD",
+    "symbol": "din."
+  },
+  "RUB": {
+    "displayName": "Russian Ruble",
+    "numericCode": 643,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "RUB",
+    "symbol": "₽"
+  },
+  "RWF": {
+    "displayName": "Rwanda Franc",
+    "numericCode": 646,
+    "defaultFractionDigits": 0,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "RWF",
+    "symbol": "Fr"
+  },
+  "SAR": {
+    "displayName": "Saudi Riyal",
+    "numericCode": 682,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SAR",
+    "symbol": "﷼‎"
+  },
+  "SBD": {
+    "displayName": "Solomon Islands Dollar",
+    "numericCode": 90,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SBD",
+    "symbol": "$"
+  },
+  "SCR": {
+    "displayName": "Seychelles Rupee",
+    "numericCode": 690,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SCR",
+    "symbol": "₨"
+  },
+  "SDG": {
+    "displayName": "Sudanese Pound",
+    "numericCode": 938,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SDG",
+    "symbol": "ج.س."
+  },
+  "SEK": {
+    "displayName": "Swedish Krona",
+    "numericCode": 752,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SEK",
+    "symbol": "kr"
+  },
+  "SGD": {
+    "displayName": "Singapore Dollar",
+    "numericCode": 702,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": false,
+    "symbolPosition": "before",
+    "isoCode": "SGD",
+    "symbol": "$"
+  },
+  "SHP": {
+    "displayName": "Saint Helena Pound",
+    "numericCode": 654,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SHP",
+    "symbol": "£"
+  },
+  "SLL": {
+    "displayName": "Sierra Leonean Leone",
+    "numericCode": 694,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SLL",
+    "symbol": "Le"
+  },
+  "SOS": {
+    "displayName": "Somali Shilling",
+    "numericCode": 706,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SOS",
+    "symbol": "Sh"
+  },
+  "SRD": {
+    "displayName": "Surinam Dollar",
+    "numericCode": 968,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SRD",
+    "symbol": "$"
+  },
+  "SSP": {
+    "displayName": "South Sudanese Pound",
+    "numericCode": 728,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SSP",
+    "symbol": "£"
+  },
+  "STD": {
+    "displayName": "São Tomé and Príncipe Dobra",
+    "numericCode": 678,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "STD",
+    "symbol": "Db"
+  },
+  "SVC": {
+    "displayName": "El Salvador Colon",
+    "numericCode": 222,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SVC",
+    "symbol": "₡"
+  },
+  "SYP": {
+    "displayName": "Syrian Pound",
+    "numericCode": 760,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SYP",
+    "symbol": "£"
+  },
+  "SZL": {
+    "displayName": "Swazi Lilangeni",
+    "numericCode": 748,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "SZL",
+    "symbol": "L"
+  },
+  "THB": {
+    "displayName": "Thai Baht",
+    "numericCode": 764,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "THB",
+    "symbol": "฿"
+  },
+  "TJS": {
+    "displayName": "Tajikistani Somoni",
+    "numericCode": 972,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "TJS",
+    "symbol": "ЅМ"
+  },
+  "TMT": {
+    "displayName": "Turkmenistan New Manat",
+    "numericCode": 934,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "TMT",
+    "symbol": "m"
+  },
+  "TND": {
+    "displayName": "Tunisian Dinar",
+    "numericCode": 788,
+    "defaultFractionDigits": 3,
+    "subUnit": 1000,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "TND",
+    "symbol": "د.ت"
+  },
+  "TOP": {
+    "displayName": "Tongan Pa’anga",
+    "numericCode": 776,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "TOP",
+    "symbol": "T$"
+  },
+  "TRY": {
+    "displayName": "Turkish Lira",
+    "numericCode": 949,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "TRY",
+    "symbol": "₺"
+  },
+  "TTD": {
+    "displayName": "Trinidad and Tobago Dollar",
+    "numericCode": 780,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "TTD",
+    "symbol": "$"
+  },
+  "TWD": {
+    "displayName": "New Taiwan Dollar",
+    "numericCode": 901,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "TWD",
+    "symbol": "$"
+  },
+  "TZS": {
+    "displayName": "Tanzanian Shilling",
+    "numericCode": 834,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "TZS",
+    "symbol": "Sh"
+  },
+  "UAH": {
+    "displayName": "Ukrainian Hryvnia",
+    "numericCode": 980,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "UAH",
+    "symbol": "₴"
+  },
+  "UGX": {
+    "displayName": "Uganda Shilling",
+    "numericCode": 800,
+    "defaultFractionDigits": 0,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "UGX",
+    "symbol": "Sh"
+  },
+  "USD": {
+    "displayName": "US Dollar",
+    "numericCode": 840,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": false,
+    "symbolPosition": "before",
+    "isoCode": "USD",
+    "symbol": "$"
+  },
+  "UYU": {
+    "displayName": "Peso Uruguayo",
+    "numericCode": 858,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "UYU",
+    "symbol": "$"
+  },
+  "UZS": {
+    "displayName": "Uzbekistan Sum",
+    "numericCode": 860,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "UZS",
+    "symbol": "so'm"
+  },
+  "VEF": {
+    "displayName": "Venezuelan Bolivar",
+    "numericCode": 937,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "VEF",
+    "symbol": "Bs."
+  },
+  "VND": {
+    "displayName": "Vietnamese Dong",
+    "numericCode": 704,
+    "defaultFractionDigits": 0,
+    "subUnit": 1,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "VND",
+    "symbol": "₫"
+  },
+  "VUV": {
+    "displayName": "Vanuatu Vatu",
+    "numericCode": 548,
+    "defaultFractionDigits": 0,
+    "subUnit": 1,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "VUV",
+    "symbol": "Vt"
+  },
+  "WST": {
+    "displayName": "Samoan Tala",
+    "numericCode": 882,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "WST",
+    "symbol": "T"
+  },
+  "XCD": {
+    "displayName": "East Caribbean Dollar",
+    "numericCode": 951,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "XCD",
+    "symbol": "$"
+  },
+  "YER": {
+    "displayName": "Yemeni Rial",
+    "numericCode": 886,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "YER",
+    "symbol": "ر.ي"
+  },
+  "ZAR": {
+    "displayName": "South African Rand",
+    "numericCode": 710,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "ZAR",
+    "symbol": "R"
+  },
+  "ZMW": {
+    "displayName": "Zambian Kwacha",
+    "numericCode": 967,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "ZMW",
+    "symbol": "ZK"
+  },
+  "ZWL": {
+    "displayName": "Zimbabwe Dollar",
+    "numericCode": 932,
+    "defaultFractionDigits": 2,
+    "subUnit": 100,
+    "symbolSpaced": true,
+    "symbolPosition": "after",
+    "isoCode": "ZWL",
+    "symbol": "$"
+  }
+}

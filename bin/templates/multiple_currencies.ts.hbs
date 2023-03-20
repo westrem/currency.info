@@ -1,0 +1,23 @@
+type CurrencyISOCode =
+{{ISOCodes}};
+
+interface Currency {
+  displayName: string;
+  numericCode: number;
+  defaultFractionDigits: number;
+  subUnit: number;
+  symbolSpaced: boolean;
+  symbolPosition: "after" | "before";
+  symbol: string;
+  isoCode: CurrencyISOCode;
+};
+
+const currenciesMap: { [key in CurrencyISOCode]: Currency } = Object.freeze({{currencies}});
+
+const currenciesList: Currency[] = Object.values(currenciesMap);
+
+export { CurrencyISOCode, Currency };
+export { currenciesMap, currenciesList };
+export default currenciesMap;
+
+{{exports}}

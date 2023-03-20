@@ -1,0 +1,14 @@
+interface Currency {
+  displayName: string;
+  numericCode: number;
+  defaultFractionDigits: number;
+  subUnit: number;
+  symbolSpaced: boolean;
+  symbolPosition: "after" | "before";
+  symbol: string;
+  isoCode: "{{ISO}}";
+};
+
+const {{ISO}}: Currency = Object.freeze({{currency}});
+
+export { {{ISO}} };
