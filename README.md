@@ -13,11 +13,11 @@ It can help you if you need to:
 You can use `npm` or `yarn` package manager to install **currency.info** as dependency
 
 ```sh
-npm i currency.info
+npm i @westrem/currency.info
 ```
 
 ```sh
-yarn add currency.info
+yarn add @westrem/currency.info
 ```
 
 # Usage
