@@ -26,14 +26,14 @@ yarn add currency.info
 
 ```typescript
 // Named imports
-import { currenciesMap, currenciesList, JPY } from 'currency.info';
+import { currenciesMap, currenciesList, JPY } from '@westrem/currency.info';
 
 // Default import is the map structure
-import currenciesMap from 'currency.info';
+import currenciesMap from '@westrem/currency.info';
 
 // Single currency import
-import { EUR } from 'currency.info'; // from main package
-import { USD } from 'currency.info/USD' // from dedicated file
+import { EUR } from '@westrem/currency.info'; // from main package
+import { USD } from '@westrem/currency.info/USD' // from dedicated file
 
 // map
 currenciesMap['EUR'].symbol === "€";
@@ -147,7 +147,7 @@ This can prevent bugs related to rounding and float number representation limita
 
 ```tsx
 // TypeScript JSX
-import { currenciesList } from 'currency.info';
+import { currenciesList } from '@westrem/currency.info';
 
 const CurrenciesSelect = () => (
     <select>
@@ -169,7 +169,7 @@ JavaScript has a great build-in utility for formatting monetary values: `Intl.Nu
 ```typescript
 // TypeScript
 
-import { currenciesMap, CurrencyISOCode } from 'currency.info';
+import { currenciesMap, CurrencyISOCode } from '@westrem/currency.info';
 
 const formatMoney = (
   valueInMinorUnits: number, 
@@ -197,7 +197,7 @@ If you want to force symbol position, for example because you are rendering valu
 ```typescript
 // TypeScript
 
-import { currenciesMap, CurrencyISOCode } from 'currency.info';
+import { currenciesMap, CurrencyISOCode } from '@westrem/currency.info';
 
 const formatMoneyTabular = (
   valueInMinorUnits: number, 
