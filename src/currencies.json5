@@ -1574,5 +1574,15 @@
     "symbolPosition": "after",
     "isoCode": "ZWL",
     "symbol": "$"
+  },
+  "XDR": {
+    "displayName": "Special drawing rights",
+    "numericCode": 960,
+    "defaultFractionDigits": 0,
+    "subUnit": 1,
+    "symbolSpaced": true,
+    "symbolPosition": "before",
+    "isoCode": "XDR",
+    "symbol": "XDR"
   }
 }

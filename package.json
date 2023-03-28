@@ -1,6 +1,6 @@
 {
   "name": "@westrem/currency.info",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "currency.info is a collection of information about actively used currencies around the world",
   "engines": {
     "yarn": ">= 1.22.4",
