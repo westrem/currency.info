@@ -573,16 +573,18 @@
     "isoCode": "HNL",
     "symbol": "L"
   },
-  "HRK": {
-    "displayName": "Croatian Kuna",
-    "numericCode": 191,
-    "defaultFractionDigits": 2,
-    "subUnit": 100,
-    "symbolSpaced": true,
-    "symbolPosition": "after",
-    "isoCode": "HRK",
-    "symbol": "kn"
-  },
+  // Replaced by the EUR in 2023 (https://www.ecb.europa.eu/euro/changeover/croatia/html/index.en.html)
+  // Dual price display until 31st Dec 2023
+  //  "HRK": {
+  //    "displayName": "Croatian Kuna",
+  //    "numericCode": 191,
+  //    "defaultFractionDigits": 2,
+  //    "subUnit": 100,
+  //    "symbolSpaced": true,
+  //    "symbolPosition": "after",
+  //    "isoCode": "HRK",
+  //    "symbol": "kn"
+  //  },
   "HTG": {
     "displayName": "Haitian Gourde",
     "numericCode": 332,
